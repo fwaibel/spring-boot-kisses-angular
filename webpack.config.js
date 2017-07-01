@@ -46,10 +46,10 @@ module.exports = {
             /angular(\\|\/)core(\\|\/)@angular/,
             root('./src'), // location of your src
             {}),
-		new CopyWebpackPlugin([ {
-    		from : 'src/app/assets',
-    		to : 'assets'}]
-		)
+		// new CopyWebpackPlugin([ {
+    		// from : 'src/app/assets',
+    		// to : 'assets'}]
+		// )
 	]
 }
 
