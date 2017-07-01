@@ -15,6 +15,7 @@ hs_err_pid*
 !gradle-wrapper.jar
 build/
 .idea
+*.iml
 /bin/
 /.settings/
 /.classpath
