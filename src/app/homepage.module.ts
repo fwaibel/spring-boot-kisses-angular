@@ -1,12 +1,12 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
-import {HttpModule} from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import {AppVersionComponent} from './appVersion.component';
 
 @NgModule({
     declarations: [AppVersionComponent],
-    imports: [BrowserModule, HttpModule],
+    imports: [BrowserModule, HttpClientModule],
     bootstrap: [AppVersionComponent]
 })
 export class HomepageModule {

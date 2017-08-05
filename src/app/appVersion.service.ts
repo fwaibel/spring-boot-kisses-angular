@@ -1,17 +1,16 @@
 import {Injectable} from '@angular/core';
-import {Http} from '@angular/http';
+import { HttpClient } from '@angular/common/http';
 
 import 'rxjs/add/operator/map';
 import {AppVersion} from "./model/appVersion";
+import {Observable} from "rxjs/Observable";
 
 @Injectable()
 export class AppVersionService {
-    constructor(private http: Http) {
+    constructor(private http: HttpClient) {
     }
 
-    load() {
-        return this.http
-            .get('../server/version')
-            .map(response => <AppVersion> response.json());
+    load(): Observable<AppVersion> {
+        return this.http.get('../server/version');
     }
 }
