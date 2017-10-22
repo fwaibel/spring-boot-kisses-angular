@@ -1,9 +1,9 @@
 node {
-    stage('Checkout') {
-        git url: 'git@github.com:fwaibel/spring-boot-kisses-angular.git'
+    stage('checkout') {
+        checkout scm
     }
 
-    stage('Build') {
+    stage('build') {
         sh './gradlew build'
     }
 
