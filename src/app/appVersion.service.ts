@@ -11,6 +11,6 @@ export class AppVersionService {
     }
 
     load(): Observable<AppVersion> {
-        return this.http.get('../server/version');
+        return this.http.get<AppVersion>('../server/version')
     }
 }
