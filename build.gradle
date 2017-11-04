@@ -29,12 +29,12 @@ node {
 }
 
 task webpack(type: NodeTask, dependsOn: 'npmInstall') {
-    script = project.file('node_modules/.bin/webpack')
+    script = project.file('node_modules/webpack/bin/webpack.js')
     args = ['--display-error-details']
 }
 
 task serve(type: NodeTask, dependsOn: 'webpack') {
-    script = project.file('node_modules/.bin/webpack-dev-server')
+    script = project.file('node_modules/webpack-dev-server/bin/webpack-dev-server.js')
     args = ['--content-base', 'src/main/resources/app',
             '--host', '0.0.0.0']
 }
