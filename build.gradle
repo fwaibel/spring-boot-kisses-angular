@@ -42,7 +42,3 @@ task serve(type: NodeTask, dependsOn: 'webpack') {
 processResources.dependsOn 'webpack'
 
 clean.delete << file('node_modules')
-
-task wrapper(type: Wrapper) {
-    gradleVersion = '4.0.2'
-}
