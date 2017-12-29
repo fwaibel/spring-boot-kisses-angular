@@ -22,6 +22,14 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
 }
 
+def generatedResources = "src/generated/resources"
+
+sourceSets {
+    main {
+        output.dir(generatedResources, builtBy: 'webpack')
+    }
+}
+
 node {
     version = '8.9.0'
     npmVersion = '5.5.1'
@@ -35,10 +43,11 @@ task webpack(type: NodeTask, dependsOn: 'npmInstall') {
 
 task serve(type: NodeTask, dependsOn: 'webpack') {
     script = project.file('node_modules/webpack-dev-server/bin/webpack-dev-server.js')
-    args = ['--content-base', 'src/main/resources/app',
+    args = ['--content-base', generatedResources,
             '--host', '0.0.0.0']
 }
 
 processResources.dependsOn 'webpack'
 
 clean.delete << file('node_modules')
+clean.delete << file(generatedResources)

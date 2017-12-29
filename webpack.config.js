@@ -11,7 +11,7 @@ module.exports = {
     },
 	output : {
 		filename : '[name].js',
-		path : path.resolve(__dirname, 'src/main/resources/static/app'),
+		path : path.resolve(__dirname, 'src/generated/resources/static/app'),
     },
     resolve: {
         extensions: ['.ts', '.js']
