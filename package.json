@@ -3,13 +3,13 @@
   "version": "0.3.0",
   "private": true,
   "dependencies": {
-    "@angular/common": "5.1.2",
-    "@angular/compiler": "5.1.2",
-    "@angular/core": "5.1.2",
-    "@angular/platform-browser": "5.1.2",
-    "@angular/platform-browser-dynamic": "5.1.2",
+    "@angular/common": "5.2.7",
+    "@angular/compiler": "5.2.7",
+    "@angular/core": "5.2.7",
+    "@angular/platform-browser": "5.2.7",
+    "@angular/platform-browser-dynamic": "5.2.7",
     "rxjs": "5.5.6",
-    "zone.js": "0.8.19"
+    "zone.js": "0.8.20"
   },
   "devDependencies": {
     "awesome-typescript-loader": "3.4.1",
