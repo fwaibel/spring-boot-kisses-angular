@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/fwaibel/spring-boot-kisses-angular.svg?branch=master)](https://travis-ci.org/fwaibel/spring-boot-kisses-angular)
 
-> Note: This project has moved to This project has moved to [datenkollektiv/spring-boot-kisses-angular](https://github.com/datenkollektiv/spring-boot-kisses-angular).
+> Note: This project has moved to [datenkollektiv/spring-boot-kisses-angular](https://github.com/datenkollektiv/spring-boot-kisses-angular).
 
 # Spring Boot kisses Angular 4
 
