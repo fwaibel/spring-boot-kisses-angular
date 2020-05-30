@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.org/fwaibel/spring-boot-kisses-angular.svg?branch=master)](https://travis-ci.org/fwaibel/spring-boot-kisses-angular)
 
+> Note: This project has moved to This project has moved to [datenkollektiv/spring-boot-kisses-angular](https://github.com/datenkollektiv/spring-boot-kisses-angular).
+
 # Spring Boot kisses Angular 4
 
 With a strong Java and Spring Framework background and looking around in the JavaScript world it seems natural to reach out into a new technology by integrating it into a know build chain.
